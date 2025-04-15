@@ -12,7 +12,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-primary/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="font-bold text-xl text-primary-dark font-baybayin">
-          Alex Johnson
+          Jm Tolentino
         </Link>
 
         {/* Mobile menu button */}
