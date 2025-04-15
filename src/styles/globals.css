@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 215 25% 12%;
+    --foreground: 210 50% 95%;
+
+    --card: 215 25% 15%;
+    --card-foreground: 210 50% 95%;
+
+    --popover: 215 25% 12%;
+    --popover-foreground: 210 50% 95%;
+
+    --primary: 215 60% 45%;
+    --primary-foreground: 210 50% 98%;
+
+    --secondary: 220 70% 50%;
+    --secondary-foreground: 210 50% 98%;
+
+    --muted: 215 25% 20%;
+    --muted-foreground: 210 40% 70%;
+
+    --accent: 250 60% 60%;
+    --accent-foreground: 210 50% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 50% 98%;
+
+    --border: 215 25% 30%;
+    --input: 215 25% 30%;
+    --ring: 215 60% 45%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Filipino-inspired decorative elements */
+.baybayin-border {
+  @apply relative;
+}
+
+.baybayin-border::before,
+.baybayin-border::after {
+  content: "";
+  @apply absolute h-1 bg-primary w-16 left-1/2 -translate-x-1/2;
+}
+
+.baybayin-border::before {
+  @apply -top-3;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 4'%3E%3Cpath d='M0,2 C20,5 60,-1 80,2' stroke='black' fill='none' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+.baybayin-border::after {
+  @apply -bottom-3;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 4'%3E%3Cpath d='M0,2 C20,-1 60,5 80,2' stroke='black' fill='none' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+/* Custom font for Filipino-inspired headings */
+@font-face {
+  font-family: "Baybayin Modern";
+  src: local("Arial");
+  /* This is a placeholder. In a real project, you would use an actual Baybayin-inspired font */
+}
+
+.font-baybayin {
+  font-family: "Baybayin Modern", sans-serif;
+  @apply tracking-wide;
+}
+
+/* Decorative corners for cards */
+.parol-card {
+  @apply relative overflow-hidden;
+}
+
+.parol-card::before {
+  content: "";
+  @apply absolute w-12 h-12 -top-6 -right-6 bg-secondary rotate-45 opacity-20;
+}
+
+.parol-card::after {
+  content: "";
+  @apply absolute w-12 h-12 -bottom-6 -left-6 bg-secondary rotate-45 opacity-20;
+}
+
+/* Capiz-inspired glow effect */
+.capiz-glow {
+  @apply relative overflow-hidden;
+}
+
+.capiz-glow::before {
+  content: "";
+  @apply absolute inset-0 bg-primary/10 opacity-0 transition-opacity duration-300;
+}
+
+.capiz-glow:hover::before {
+  @apply opacity-20;
+}
+
+/* Bamboo-inspired divider */
+.bamboo-divider {
+  @apply h-1 bg-secondary relative overflow-hidden;
+}
+
+.bamboo-divider::before {
+  content: "";
+  @apply absolute inset-0;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.1) 10px,
+    rgba(255, 255, 255, 0.1) 20px
+  );
+}
