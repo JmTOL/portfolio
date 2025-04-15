@@ -10,7 +10,7 @@ export function Footer() {
       <div className="absolute inset-0 bg-weave-pattern opacity-10"></div>
       <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row relative">
         <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-          © {currentYear} Alex Johnson. All rights reserved.
+          © {currentYear}
         </p>
         <div className="h-1 w-20 bg-secondary mx-auto md:hidden bamboo-divider"></div>
         <div className="flex items-center gap-4">
