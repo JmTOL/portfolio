@@ -122,7 +122,7 @@ export function Contact() {
               <CardDescription>I'll get back to you as soon as possible</CardDescription>
             </CardHeader>
             <CardContent className="pt-6">
-              <form name="portfolio-contact-me" onSubmit={handleFormSubmit} data-netlify="true" className="space-y-4">
+              <form name="contact-me" onSubmit={handleFormSubmit} data-netlify="true" className="space-y-4">
                 <Input type="hidden" name="subject" value="contact-me" />
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
