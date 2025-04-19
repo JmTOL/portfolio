@@ -129,7 +129,7 @@ export const contactInfo = {
   phone: "+63 927 165 0882",
   location: "Manila, Philippines",
   socialMedia: {
-    github: "https://github.com/toljm",
+    github: "https://github.com/jmtol",
     linkedin: "https://linkedin.com/in/tolentinojm",
     twitter: "https://twitter.com/",
   },

@@ -8,7 +8,7 @@ import Link from "next/link"
 export function Projects() {
   return (
     <section id="projects" className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background relative">
-      <div className="absolute inset-0 bg-solihiya-pattern opacity-10"></div>
+      <div className="absolute inset-0 bg-solihiya-pattern opacity-25"></div>
       <div className="container px-4 md:px-6 relative">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2 baybayin-border pb-4">
@@ -28,7 +28,7 @@ export function Projects() {
               className="overflow-hidden capiz-glow border-primary/20 bg-gradient-to-br from-card to-card/80"
             >
               <div className="aspect-video overflow-hidden relative">
-                <div className="absolute inset-0 bg-weave-pattern opacity-10"></div>
+                <div className="absolute inset-0 bg-weave-pattern opacity-25"></div>
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}

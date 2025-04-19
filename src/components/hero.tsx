@@ -7,7 +7,7 @@ import Image from 'next/image'
 export function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-between relative overflow-hidden bg-gradient-to-b from-primary/10 to-background">
-      <div className="absolute inset-0 bg-solihiya-pattern opacity-10"></div>
+      <div className="absolute inset-0 bg-solihiya-pattern opacity-25"></div>
 
       {/* Main hero content */}
       <div className="container px-4 md:px-6 flex-1 flex items-center py-20">
@@ -45,7 +45,7 @@ export function Hero() {
           </div>
           <div className="flex flex-col items-center justify-center">
             <div className="relative aspect-square overflow-hidden rounded-full w-[280px] h-[280px] md:w-[400px] md:h-[400px] border-4 border-primary p-1">
-              <div className="absolute inset-0 bg-weave-pattern opacity-10 rounded-full"></div>
+              <div className="absolute inset-0 bg-weave-pattern opacity-25 rounded-full"></div>
               <div className="rounded-full overflow-hidden h-full w-full relative">
                 <Image src={`/images/me.jpg`} alt="Jm Tolentino" width="400" height="400" />
                 <div className="absolute inset-0 border-8 border-primary/20 rounded-full"></div>
