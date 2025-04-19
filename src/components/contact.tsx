@@ -86,17 +86,18 @@ export function Contact() {
 
           <Card className="border-primary/20 bg-gradient-to-br from-card to-card/80 parol-card">
             <CardHeader className="border-b border-primary/10">
-              <CardTitle className="text-foreground">Send Me a Message</CardTitle>
+              <CardTitle className="text-foreground">Send me a message</CardTitle>
               <CardDescription>I'll get back to you as soon as possible</CardDescription>
             </CardHeader>
             <CardContent className="pt-6">
-              <form className="space-y-4">
+              <form name="portfolio-contact-me" method="POST" data-netlify="true" className="space-y-4">
+                <Input type="hidden" name="subject" value="Contact via Portfolio" />
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
                       Name
                     </label>
-                    <Input id="name" placeholder="Your name" className="border-primary/20 focus-visible:ring-primary" />
+                    <Input id="name" name="name" placeholder="Your name" className="border-primary/20 focus-visible:ring-primary" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-foreground">
@@ -104,6 +105,7 @@ export function Contact() {
                     </label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder="Your email"
                       className="border-primary/20 focus-visible:ring-primary"
@@ -111,17 +113,12 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium text-foreground">
-                    Subject
-                  </label>
-                  <Input id="subject" placeholder="Subject" className="border-primary/20 focus-visible:ring-primary" />
-                </div>
-                <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-foreground">
                     Message
                   </label>
                   <Textarea
                     id="message"
+                    name="message"
                     placeholder="Your message"
                     rows={5}
                     className="border-primary/20 focus-visible:ring-primary"
