@@ -1,12 +1,42 @@
 import { contactInfo } from "~/lib/data"
 import { Button } from "~/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "~/components/ui/card"
+import { Alert } from "~/components/ui/alert"
 import { Input } from "~/components/ui/input"
 import { Textarea } from "~/components/ui/textarea"
 import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
 import Link from "next/link"
+import { useState, type FormEvent } from "react"
 
 export function Contact() {
+
+  const [status, setStatus] = useState<string | null>(null);  
+  const [error, setError] = useState<string | null>(null);
+
+  const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      try {
+          setStatus('pending');
+          setError(null);
+          const myForm = event.currentTarget;
+          const formData = new FormData(myForm);
+          const res = await fetch('/__contact-form.html', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: new URLSearchParams(formData as any).toString()
+          });
+          if (res.status === 200) {
+              setStatus('ok');
+          } else {
+              setStatus('error');
+              setError(`${res.status} ${res.statusText}`);
+          }
+      } catch (e) {
+          setStatus('error');
+          setError(`${e}`);
+      }
+  };
+
   return (
     <section id="contact" className="py-16 md:py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-batik-pattern opacity-10"></div>
@@ -90,8 +120,8 @@ export function Contact() {
               <CardDescription>I'll get back to you as soon as possible</CardDescription>
             </CardHeader>
             <CardContent className="pt-6">
-              <form name="portfolio-contact-me" method="POST" data-netlify="true" className="space-y-4">
-                <Input type="hidden" name="subject" value="Contact via Portfolio" />
+              <form name="portfolio-contact-me" onSubmit={handleFormSubmit} data-netlify="true" className="space-y-4">
+                <Input type="hidden" name="subject" value="contact-me" />
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
@@ -127,6 +157,8 @@ export function Contact() {
                 <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-white rounded-full">
                   Send Message
                 </Button>
+                {status === 'ok' && <Alert type="success">Submitted!</Alert>}
+                {status === 'error' && <Alert type="error">{error}</Alert>}
               </form>
             </CardContent>
           </Card>
