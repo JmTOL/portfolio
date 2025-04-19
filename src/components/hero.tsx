@@ -2,6 +2,7 @@ import { Button } from "~/components/ui/button"
 import Link from "next/link"
 import { ArrowDown, User, Briefcase, Code } from "lucide-react"
 import { contactInfo } from "~/lib/data"
+import Image from 'next/image'
 
 export function Hero() {
   return (
@@ -20,34 +21,33 @@ export function Hero() {
               <p className="text-xl text-muted-foreground">Full Stack Developer</p>
             </div>
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
-              I build exceptional digital experiences that combine beautiful design with cutting-edge technology,
-              inspired by the vibrant spirit of Filipino craftsmanship.
+              I build exceptional digital experiences.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
-              <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white rounded-full">
-                <Link href="#projects">View My Work</Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-primary text-foreground hover:bg-primary/20 rounded-full"
-              >
-                <Link href="#contact">Contact Me</Link>
-              </Button>
+              <Link href="#projects">
+                <Button 
+                  variant="default" 
+                  size="lg" 
+                  className="bg-secondary border hover:bg-secondary/90 text-white rounded-full backdrop-blur-sm">
+                  View my work
+                </Button>
+              </Link>
+              <Link href="#contact">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border border-primary text-foreground hover:bg-primary/20 rounded-full backdrop-blur-sm"
+                >
+                  Contact Me
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
             <div className="relative aspect-square overflow-hidden rounded-full w-[280px] h-[280px] md:w-[400px] md:h-[400px] border-4 border-primary p-1">
               <div className="absolute inset-0 bg-weave-pattern opacity-10 rounded-full"></div>
               <div className="rounded-full overflow-hidden h-full w-full relative">
-                <img
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Jm Tolentino"
-                  className="object-cover h-full w-full"
-                  width={400}
-                  height={400}
-                />
+                <Image src={`/images/me.jpg`} alt="Jm Tolentino" width="400" height="400" />
                 <div className="absolute inset-0 border-8 border-primary/20 rounded-full"></div>
               </div>
             </div>
@@ -56,7 +56,7 @@ export function Hero() {
       </div>
 
       {/* About Me section */}
-      <div id="about" className="container px-4 md:px-6 pb-16 md:pb-24">
+      {<div id="about" className="container px-4 md:px-6 pb-16 md:pb-24">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl font-baybayin text-foreground">About Me</h2>
           <div className="h-1 w-20 bg-secondary mx-auto mt-2 mb-6 bamboo-divider"></div>
@@ -72,8 +72,7 @@ export function Hero() {
               <h3 className="text-lg font-semibold">Background</h3>
             </div>
             <p className="text-muted-foreground">
-              I'm a passionate developer with over 7 years of experience building web applications. I specialize in
-              creating responsive, user-friendly interfaces with modern technologies.
+              I'm a passionate developer with over 7 years of experience building web applications.
             </p>
           </div>
 
@@ -86,8 +85,7 @@ export function Hero() {
               <h3 className="text-lg font-semibold">Experience</h3>
             </div>
             <p className="text-muted-foreground">
-              I've worked with companies ranging from startups to enterprises, helping them build scalable applications
-              and improve their development processes.
+              I've worked with companies ranging from startups to enterprises, helping them build scalable applications.
             </p>
           </div>
 
@@ -100,8 +98,7 @@ export function Hero() {
               <h3 className="text-lg font-semibold">Expertise</h3>
             </div>
             <p className="text-muted-foreground">
-              My core skills include React, TypeScript, Node.js, and modern web frameworks. I'm passionate about clean
-              code, performance optimization, and creating exceptional user experiences.
+              My core skills include C#, SQL, React, Next.js, and modern web frameworks.
             </p>
           </div>
         </div>
@@ -119,7 +116,7 @@ export function Hero() {
             </Button>
           </Link>
         </div>
-      </div>
+      </div>}
     </section>
   )
 }

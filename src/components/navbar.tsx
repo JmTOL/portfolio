@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "~/components/ui/button"
+import Image from 'next/image'
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,7 +13,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-primary/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="font-bold text-xl text-primary-dark font-baybayin">
-          Jm Tolentino
+          <Image src="/images/logo.png" height={50} width={50} alt="JMT"></Image>
         </Link>
 
         {/* Mobile menu button */}
@@ -28,7 +29,7 @@ export function Navbar() {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
             About
           </Link>
           <Link href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
@@ -37,9 +38,9 @@ export function Navbar() {
           <Link href="#employment" className="text-sm font-medium hover:text-primary transition-colors">
             Employment
           </Link>
-          <Link href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
+          {/* <Link href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
             Projects
-          </Link>
+          </Link> */}
           <Link href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
             Contact
           </Link>

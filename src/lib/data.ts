@@ -1,14 +1,18 @@
 export const employmentHistory = [
   {
     id: 1,
-    title: "Mid Software Developer",
+    title: "Software Developer",
     url: "https://www.anytimemailbox.com/",
     company: "Anytime Mailbox",
     location: "Remote",
     period: "2021 - Present",
-    description:
-      "Led the development of the company's flagship SaaS product, improving performance by 40%. Mentored junior developers and implemented modern React practices across the team.",
-    technologies: ["C#", "SQL Server", "ASP.NET", "Entity Framework"],
+    description:[
+      "Perform development of the company's flagship SaaS product using ASP.NET, C# and SQL.",
+      "Integrate third party APIs for payments, automate processes and follow regulations.",
+      "Collaborate within an Agile development team to deliver timely solutions.",
+      "Mentored junior developers and implemented modern development practices across the team."
+    ],      
+    technologies: ["C#", "SQL", "ASP.NET", "REST API", "Stripe", "Microservices", "AWS"],
   },
   {
     id: 2,
@@ -17,9 +21,12 @@ export const employmentHistory = [
     company: "Infor",
     location: "Taguig, Philippines",
     period: "2019 - 2021",
-    description:
-      "Developed and maintained multiple client projects using the MERN stack. Implemented CI/CD pipelines and reduced deployment time by 60%.",
-    technologies: ["MongoDB", "Express.js", "React", "Node.js", "AWS"],
+    description:[
+      "Developed and maintained Data Warehousing software using VB.NET, C#, T-SQL, and Powershell scripting.",
+      "Create data pipelines for performing Extract, Transform and Load (ETL) of data to extract insights",
+      "Collaborate within an Agile development team to deliver timely solutions.",
+    ],
+    technologies: ["C#", "SQL", "VB.NET", "SSIS", "Powershell Scripting"],
   },
   {
     id: 3,
@@ -29,56 +36,35 @@ export const employmentHistory = [
     location: "Taguig, Philippines",
     period: "2018 - 2019",
     description:
-      "Created responsive websites for clients across various industries. Collaborated with designers to implement pixel-perfect UIs.",
-    technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP"],
+      [
+        "Work on different projects including:",
+        "Development of Data Analytics website using React, REST API(C#), and MSSQL.",  
+        "Build automation scripts for monitoring and managing infrastructure using Powershell, REST API(C#), and MSSQL.",
+        "Generate data pipelines using SSIS and create reports using MSSQL and SSRS.",
+        "Collaborate within an Agile development team to deliver timely solutions."
+      ],
+    technologies: ["C#", "React", "REST API", "SQL", "Powershell Scripting", "AWS", "Azure"],
   },
 ]
 
 export const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "WIP",
     description:
-      "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
+      "WIP",
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
     demoUrl: "https://example.com",
     githubUrl: "https://github.com/example",
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team workspaces.",
-    image: "/placeholder.svg?height=300&width=500",
-    technologies: ["React", "Firebase", "Material UI", "Redux"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-  },
-  {
-    id: 3,
-    title: "Health & Fitness Tracker",
-    description:
-      "Mobile-first application for tracking workouts, nutrition, and health metrics with data visualization.",
-    image: "/placeholder.svg?height=300&width=500",
-    technologies: ["React Native", "GraphQL", "Node.js", "D3.js"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-  },
-  {
-    id: 4,
-    title: "AI Content Generator",
-    description: "Web application that leverages AI to generate marketing copy, blog posts, and social media content.",
-    image: "/placeholder.svg?height=300&width=500",
-    technologies: ["Vue.js", "Python", "Flask", "OpenAI API"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-  },
+  }
 ]
 
 export const skills = [
   {
     category: "Frontend Development",
     technologies: [
+      "ASP .NET MVC",
       "React",
       "Next.js",
       "TypeScript",
@@ -86,24 +72,17 @@ export const skills = [
       "HTML5",
       "CSS3",
       "Tailwind CSS",
-      "Material UI",
-      "Redux",
       "Vue.js",
       "Responsive Design",
-      "Web Accessibility",
     ],
   },
   {
     category: "Backend Development",
     technologies: [
-      "Node.js",
-      "Express.js",
-      "Python",
-      "Django",
-      "GraphQL",
+      "C#",
       "REST API",
-      "PHP",
-      "Java",
+      "Hangfire",
+      "Stripe",
       "Authentication",
       "Microservices",
     ],
@@ -111,14 +90,10 @@ export const skills = [
   {
     category: "Database & Storage",
     technologies: [
-      "MongoDB",
-      "PostgreSQL",
-      "MySQL",
-      "Firebase",
-      "Redis",
-      "Elasticsearch",
-      "SQL",
+      "MS SQL",
       "NoSQL",
+      "PostgreSQL",
+      "MongoDB",
       "Data Modeling",
     ],
   },
@@ -130,11 +105,7 @@ export const skills = [
       "Kubernetes",
       "CI/CD",
       "Git",
-      "GitHub Actions",
-      "Terraform",
-      "Serverless",
-      "Linux",
-      "Nginx",
+      "Serverless"
     ],
   },
   {
@@ -142,14 +113,12 @@ export const skills = [
     technologies: [
       "VS Code",
       "Figma",
-      "Adobe XD",
       "Jira",
       "Agile",
       "Scrum",
       "TDD",
-      "Postman",
-      "Performance Optimization",
-      "SEO",
+      "BDD",
+      "Postman"
     ],
   },
 ]

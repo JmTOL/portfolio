@@ -55,7 +55,9 @@ export function Employment() {
                   {/* Right column - Role and description */}
                   <div className="p-6">
                     <h4 className="text-xl font-semibold mb-3">{job.title}</h4>
-                    <p className="text-muted-foreground mb-4">{job.description}</p>
+                    {job.description.map((desc) => (
+                      <p key={desc} className="text-muted-foreground mb-4">{desc}</p>
+                    ))}
                     <div className="flex flex-wrap gap-2">
                       {job.technologies.map((tech) => (
                         <Badge key={tech} className="bg-secondary/20 text-foreground border-none">
