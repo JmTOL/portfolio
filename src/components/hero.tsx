@@ -43,7 +43,7 @@ export function Hero() {
               <div className="rounded-full overflow-hidden h-full w-full relative">
                 <img
                   src="/placeholder.svg?height=400&width=400"
-                  alt="Alex Johnson"
+                  alt="Jm Tolentino"
                   className="object-cover h-full w-full"
                   width={400}
                   height={400}
