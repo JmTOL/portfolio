@@ -123,7 +123,8 @@ export function Contact() {
             </CardHeader>
             <CardContent className="pt-6">
               <form name="contact-me" onSubmit={handleFormSubmit} data-netlify="true" className="space-y-4">
-                <Input type="hidden" name="subject" value="contact-me" />
+                <Input type="hidden" name="form-name" value="contact-me" />
+                <Input type="hidden" name="subject" value="Hi" />
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
