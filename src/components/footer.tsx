@@ -7,7 +7,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-primary/20 py-6 md:py-0 relative overflow-hidden">
-      <div className="absolute inset-0 bg-weave-pattern opacity-25"></div>
+      <div className="absolute inset-0 bg-weave-pattern opacity-15"></div>
       <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row relative">
         <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
           © {currentYear}

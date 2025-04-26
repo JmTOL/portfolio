@@ -41,7 +41,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-16 md:py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-batik-pattern opacity-25"></div>
+      <div className="absolute inset-0 bg-batik-pattern opacity-15"></div>
       <div className="container px-4 md:px-6 relative">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2 baybayin-border pb-4">
