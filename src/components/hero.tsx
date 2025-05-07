@@ -21,7 +21,7 @@ export function Hero() {
               <p className="text-xl text-muted-foreground">Full Stack Developer</p>
             </div>
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
-              I build exceptional digital experiences.
+              Welcome to my portfolio.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
               <Link href="#projects">

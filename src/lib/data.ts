@@ -50,13 +50,23 @@ export const employmentHistory = [
 export const projects = [
   {
     id: 1,
-    title: "WIP",
+    title: "White Board",
     description:
-      "WIP",
-    image: "/placeholder.svg?height=300&width=500",
-    technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+      "A white board application that multiple user can use independently at the same time. Users can draw, add sticky notes and stickers/emojis",
+    image: "/images/whiteboard.jpg?height=300&width=500",
+    technologies: ["C#", "ASP.NET", "SignalR", "Javascript", "Docker", "Railway"],
+    demoUrl: "https://serene-magic-production.up.railway.app/",
+    githubUrl: "https://github.com/JmTOL/WhiteBoardApp",
+  },
+  {
+    id: 2,
+    title: "Portfolio",
+    description:
+      "My own porfolio page on the web with its own custom domain, working contact form and links.",
+    image: "/images/portfolio.jpg?height=300&width=500",
+    technologies: ["React", "Next.js", "Tailwind CSS", "Netlify"],
+    demoUrl: "toljm.dev",
+    githubUrl: "https://github.com/JmTOL/portfolio",
   }
 ]
 

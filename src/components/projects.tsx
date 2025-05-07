@@ -64,23 +64,26 @@ export function Projects() {
                 <p>{project.description}</p>
               </CardContent>
               <CardFooter className="flex justify-between border-t border-primary/10 mt-4 pt-4">
-                <Button
-                  asChild
-                  variant="outline"
-                  size="sm"
-                  className="rounded-full border-primary hover:bg-primary/20 text-foreground"
-                >
-                  <Link href={project.githubUrl} target="_blank">
+                <Link href={project.githubUrl} target="_blank">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="rounded-full border border-primary/30 bg-background/80 backdrop-blur-sm"
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     Code
-                  </Link>
-                </Button>
-                <Button asChild size="sm" className="rounded-full bg-secondary hover:bg-secondary/90 text-white">
-                  <Link href={project.demoUrl} target="_blank">
+                  </Button>
+                </Link>
+                <Link href={project.demoUrl} target="_blank">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="rounded-full bg-secondary hover:bg-secondary/90 text-white backdrop-blur-sm"
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}
