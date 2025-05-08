@@ -54,7 +54,7 @@ export const projects = [
     description:
       "A white board application that multiple user can use independently at the same time. Users can draw, add sticky notes and stickers/emojis",
     image: "/images/whiteboard.jpg?height=300&width=500",
-    technologies: ["C#", "ASP.NET", "SignalR", "Javascript", "Docker", "Railway"],
+    technologies: ["C#", "ASP.NET", "SignalR", "Entity Framework", "SQL", "Javascript", "Docker", "Railway"],
     demoUrl: "https://whiteboard.toljm.dev/",
     githubUrl: "https://github.com/JmTOL/WhiteBoardApp",
   },
