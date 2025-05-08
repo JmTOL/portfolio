@@ -55,7 +55,7 @@ export const projects = [
       "A white board application that multiple user can use independently at the same time. Users can draw, add sticky notes and stickers/emojis",
     image: "/images/whiteboard.jpg?height=300&width=500",
     technologies: ["C#", "ASP.NET", "SignalR", "Javascript", "Docker", "Railway"],
-    demoUrl: "https://serene-magic-production.up.railway.app/",
+    demoUrl: "https://whiteboard.toljm.dev/",
     githubUrl: "https://github.com/JmTOL/WhiteBoardApp",
   },
   {
@@ -65,7 +65,7 @@ export const projects = [
       "My own porfolio page on the web with its own custom domain, working contact form and links.",
     image: "/images/portfolio.jpg?height=300&width=500",
     technologies: ["React", "Next.js", "Tailwind CSS", "Netlify"],
-    demoUrl: "toljm.dev",
+    demoUrl: "https://toljm.dev/",
     githubUrl: "https://github.com/JmTOL/portfolio",
   }
 ]
