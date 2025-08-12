@@ -45,7 +45,7 @@ export function Navbar() {
             Contact
           </Link>
           <Button asChild className="bg-secondary hover:bg-secondary/90 text-white rounded-full">
-            <Link href="/resume.pdf" target="_blank">
+            <Link href="/cv.pdf" target="_blank">
               Resume
             </Link>
           </Button>
@@ -92,7 +92,7 @@ export function Navbar() {
                 Contact
               </Link>
               <Button asChild className="bg-secondary hover:bg-secondary/90 text-white rounded-full">
-                <Link href="/resume.pdf" target="_blank">
+                <Link href="/cv.pdf" target="_blank">
                   Resume
                 </Link>
               </Button>
