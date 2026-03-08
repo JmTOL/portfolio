@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Matthew Tolentino - Fullstack Software Developer</title>
+    <title>John Matthew Tolentino - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,51 +13,63 @@
         }
 
         body {
-            font-family: 'Calibri', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.5;
-            color: #333;
-            background: #fff;
-            padding: 30px 40px;
-            max-width: 850px;
-            margin: 0 auto;
+            font-family: 'Inter', Arial, sans-serif;
             font-size: 10.5pt;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fff;
+            padding: 52px 64px;
+            max-width: 880px;
+            margin: 0 auto;
         }
 
-        @media print {
-            body {
-                padding: 0.4in 0.5in;
-                font-size: 10pt;
-            }
-        }
-
-        /* Header Section */
+        /* ── Header ── */
         header {
             text-align: center;
-            margin-bottom: 20px;
-            padding-bottom: 12px;
-            border-bottom: 2.5px solid #2c3e50;
+            margin-bottom: 22px;
+            padding-bottom: 16px;
+            border-bottom: 1.5px solid #1a1a1a;
         }
 
         h1 {
-            font-size: 26pt;
-            color: #2c3e50;
-            margin-bottom: 8px;
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 28pt;
             font-weight: 700;
+            color: #1a1a1a;
             letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 10.5pt;
+            font-weight: 500;
+            color: #444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 8px;
+            gap: 4px 0;
             font-size: 9.5pt;
-            color: #555;
+            color: #444;
+        }
+
+        .contact-info span {
+            display: inline;
+        }
+
+        .contact-info .sep {
+            margin: 0 10px;
+            color: #bbb;
         }
 
         .contact-info a {
-            color: #2980b9;
+            color: #1a1a1a;
             text-decoration: none;
         }
 
@@ -64,203 +77,234 @@
             text-decoration: underline;
         }
 
-        /* Section Styles */
+        /* ── Section Headings ── */
         section {
-            margin-bottom: 18px;
+            margin-bottom: 28px;
         }
 
         h2 {
-            font-size: 13pt;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 1.5px solid #3498db;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 11.5pt;
             font-weight: 700;
-        }
-
-        /* Professional Summary */
-        #summary p {
-            line-height: 1.5;
-            color: #444;
-            text-align: justify;
-            margin-bottom: 5px;
-        }
-
-        /* Experience Section */
-        .job {
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 4px;
             margin-bottom: 16px;
+        }
+
+        /* ── Summary ── */
+        #summary p {
+            font-size: 10.5pt;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* ── Experience ── */
+        .job {
+            margin-bottom: 20px;
         }
 
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 4px;
             flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 2px;
         }
 
         .job-title {
-            font-size: 11.5pt;
-            font-weight: 700;
-            color: #2c3e50;
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #1a1a1a;
         }
 
         .job-date {
             font-size: 9.5pt;
-            color: #7f8c8d;
+            color: #555;
             font-style: italic;
         }
 
         .company-info {
             font-size: 10pt;
-            color: #555;
-            margin-bottom: 6px;
+            color: #444;
+            margin-bottom: 7px;
+            font-style: italic;
         }
 
         .company-name {
+            font-style: normal;
             font-weight: 600;
-            color: #2980b9;
-        }
-
-        .location {
-            color: #7f8c8d;
-            font-style: italic;
+            color: #1a1a1a;
         }
 
         .highlights {
             margin-left: 18px;
-            margin-top: 6px;
         }
 
         .highlights li {
             margin-bottom: 5px;
-            line-height: 1.45;
-            color: #444;
-            text-align: justify;
-        }
-
-        /* Skills Section */
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px 15px;
-        }
-
-        .skill-category {
-            background: #f8f9fa;
-            padding: 10px 12px;
-            border-radius: 4px;
-            border-left: 3px solid #3498db;
-        }
-
-        .skill-category h3 {
+            line-height: 1.55;
+            color: #333;
             font-size: 10.5pt;
-            color: #2c3e50;
-            margin-bottom: 6px;
+        }
+
+        /* ── Skills ── */
+        #skills {
+            margin-bottom: 28px;
+        }
+
+        .skill-row {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skill-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-label {
+            font-size: 8.5pt;
             font-weight: 600;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            white-space: nowrap;
+            min-width: 160px;
         }
 
-        .skill-category ul {
-            list-style: none;
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
         }
 
-        .skill-category li {
-            padding: 2px 0;
+        .skill-tag {
+            font-size: 9pt;
+            color: #333;
+            background: #f2f2f2;
+            border: 1px solid #d4d4d4;
+            padding: 2px 10px;
+            border-radius: 3px;
+            white-space: nowrap;
+            line-height: 1.5;
+        }
+
+        /* ── Education ── */
+        #education .edu-entry {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 4px;
+        }
+
+        .edu-left .edu-degree {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .edu-left .edu-school {
+            font-size: 10pt;
+            color: #444;
+            font-style: italic;
+        }
+
+        .edu-year {
             font-size: 9.5pt;
             color: #555;
-            line-height: 1.4;
+            font-style: italic;
         }
 
-        .skill-category li:before {
-            content: "▪ ";
-            color: #3498db;
-            font-weight: bold;
-            margin-right: 4px;
-        }
-
-        /* Print Optimization */
+        /* ── Print ── */
         @media print {
             body {
-                font-size: 10pt;
+                padding: 0;
+                font-size: 9.5pt;
+                line-height: 1.45;
+                max-width: 100%;
             }
 
-            h1 {
-                font-size: 24pt;
+            header {
+                margin-bottom: 14px;
+                padding-bottom: 10px;
             }
+
+            h1 { font-size: 22pt; margin-bottom: 4px; }
+
+            .subtitle { font-size: 9.5pt; margin-bottom: 7px; }
+
+            .contact-info { font-size: 9pt; }
 
             h2 {
-                font-size: 12pt;
-                page-break-after: avoid;
-                margin-top: 8px;
+                font-size: 10pt;
+                margin-bottom: 10px;
+                padding-bottom: 3px;
             }
 
-            .job {
-                page-break-inside: avoid;
+            section { margin-bottom: 16px; }
+
+            #summary p { font-size: 9.5pt; line-height: 1.5; }
+
+            .job { margin-bottom: 12px; }
+
+            .job-title { font-size: 10pt; }
+            .job-date { font-size: 9pt; }
+            .company-info { font-size: 9.5pt; margin-bottom: 5px; }
+
+            .highlights li {
+                margin-bottom: 3px;
+                line-height: 1.4;
+                font-size: 9.5pt;
             }
 
-            .skill-category {
-                page-break-inside: avoid;
-            }
+            .skill-row { margin-bottom: 6px; gap: 8px; }
+            .skill-label { min-width: 130px; font-size: 8pt; }
+            .skill-tag { font-size: 8.5pt; padding: 1px 8px; }
 
-            section {
-                page-break-inside: avoid;
-            }
+            .edu-left .edu-degree { font-size: 10pt; }
+            .edu-left .edu-school { font-size: 9.5pt; }
 
-            #experience {
-                page-break-inside: auto;
-            }
-
-            a {
-                color: #2980b9;
-                text-decoration: none;
-            }
-
-            .contact-info a:after {
-                content: "";
-            }
-
-            /* Force page break before skills if needed */
-            #skills {
-                page-break-before: auto;
-            }
-        }
-
-        /* Additional styling for readability */
-        strong {
-            color: #2c3e50;
+            a { color: #1a1a1a; }
         }
 
         @page {
             size: letter;
-            margin: 0.5in 0.6in;
-        }
-
-        /* Ensure links are visible in print */
-        a[href^="http"]:after {
-            content: none;
+            margin: 0.4in 0.5in;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>John Matthew Tolentino</h1>
+        <div class="subtitle">Fullstack Software Developer</div>
         <div class="contact-info">
-            <span>📧 <a href="mailto:tolentino.jm@live.com">tolentino.jm@live.com</a></span>
-            <span>📱 +639271650882</span>
-            <span>🌐 <a href="https://www.toljm.dev" target="_blank">www.toljm.dev</a></span>
-            <span>📍 Remote - Philippines</span>
+            <span><a href="mailto:tolentino.jm@live.com">tolentino.jm@live.com</a></span>
+            <span class="sep">|</span>
+            <span>+63 927 165 0882</span>
+            <span class="sep">|</span>
+            <span><a href="https://www.toljm.dev" target="_blank">www.toljm.dev</a></span>
+            <span class="sep">|</span>
+            <span><a href="https://www.linkedin.com/in/tolentinojm/" target="_blank">linkedin.com/in/tolentinojm</a></span>
+            <span class="sep">|</span>
+            <span>Remote &mdash; Philippines</span>
         </div>
     </header>
 
     <section id="summary">
-        <h2>Professional Summary</h2>
+        <h2>Profile</h2>
         <p>
-            Results-driven Fullstack Software Developer with 8+ years of experience building scalable web applications, 
-            APIs, and cloud-based solutions. Specialized in payment system integration, cloud migration, and modern 
-            full-stack development using C#, JavaScript/TypeScript, and Azure/AWS. Proven track record of delivering 
-            high-impact solutions in Agile environments while mentoring teams through technical transformations.
+            Fullstack Software Developer with 8+ years building web applications, APIs, and cloud systems in C#/.NET and JavaScript &mdash; most recently on a live SaaS product handling payment infrastructure and cloud migration at scale.
+            I'm comfortable owning features end-to-end across the stack, and have spent meaningful time on the infrastructure and automation side as well.
+            I work well in distributed Agile teams and have a track record of stepping into architecture and mentoring roles on the teams I've been part of.
         </p>
     </section>
 
@@ -270,156 +314,179 @@
         <div class="job">
             <div class="job-header">
                 <div class="job-title">Fullstack Software Developer</div>
-                <div class="job-date">August 2020 - Present</div>
+                <div class="job-date">August 2020 &ndash; Present</div>
             </div>
             <div class="company-info">
-                <span class="company-name">Anytime Mailbox</span> • 
-                <a href="https://www.anytimemailbox.com" target="_blank">www.anytimemailbox.com</a> • 
-                <span class="location">Remote</span>
+                <span class="company-name">Anytime Mailbox</span> &mdash;
+                <a href="https://www.anytimemailbox.com" target="_blank">www.anytimemailbox.com</a>,
+                Remote
             </div>
             <ul class="highlights">
-                <li>Developed a comprehensive Billing API following modern best practices, integrating multiple payment gateways (Stripe, Authorize.net, etc.) to process transactions, manage subscriptions, and handle complex billing workflows.</li>
-                <li>Contributed to end-to-end Azure cloud migration, modernizing legacy architecture and successfully migrating historical data to cloud-native services with minimal downtime.</li>
-                <li>Built and maintained full-stack solutions across web and mobile platforms using C#, JavaScript, T-SQL, and modern API frameworks to meet evolving business requirements.</li>
-                <li>Integrated third-party APIs for tax compliance and critical business workflows, ensuring seamless data flow and system interoperability.</li>
-                <li>Served as platform Subject Matter Expert (SME), mentoring team members on migrating from legacy systems to modern cloud architecture and providing technical guidance for resolving complex issues.</li>
-                <li>Collaborated within cross-functional Agile teams to deliver high-impact features aligned with strategic business objectives.</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">Workflow Automation Developer</div>
-                <div class="job-date">Ongoing</div>
-            </div>
-            <div class="company-info">
-                <span class="company-name">Freelance</span> • 
-                <span class="location">Remote</span>
-            </div>
-            <ul class="highlights">
-                <li>Designed and deployed n8n-based automation workflows for small to medium businesses to reduce manual tasks and increase efficiency.</li>
-                <li>Developed custom n8n nodes for proprietary and third-party API integrations, ensuring seamless connectivity across business systems.</li>
-                <li>Delivered API orchestration projects integrating payment platforms, CRM tools, and internal services.</li>
-                <li>Created modular workflow templates for reusable automation patterns, enhancing scalability and maintainability.</li>
+                <li>Led payment integration work with Stripe and other payment gateways &mdash; built out subscription billing, one-time charges, refunds, proration, and webhook event handling, replacing a slow in-house billing system and opening the platform up to future products.</li>
+                <li>Worked across all three sides of the platform &mdash; customer-facing features (mailbox management, billing self-service), operator tools (mail handling workflows), and admin dashboards (account management, reporting, configuration).</li>
+                <li>Contributed to the Azure cloud migration &mdash; wrote the data migration code to move hundreds of thousands of historical records to the new cloud environment.</li>
+                <li>Day-to-day work is primarily in ASP.NET and an internal framework built up over time &mdash; C#/.NET on the backend, JavaScript and jQuery on the frontend, T-SQL and SQL Server for database.</li>
+                <li>Own the third-party integration layer: tax compliance APIs, webhook pipelines, and a handful of external service connectors that need to stay in sync with the core platform.</li>
+                <li>Became the internal point of contact for platform architecture questions &mdash; reviewed PRs, ran knowledge-sharing sessions, and helped 10+ engineers get up to speed on the cloud-migrated codebase.</li>
             </ul>
         </div>
 
         <div class="job">
             <div class="job-header">
                 <div class="job-title">Associate Software Engineer</div>
-                <div class="job-date">April 2019 - August 2020</div>
+                <div class="job-date">April 2019 &ndash; August 2020</div>
             </div>
             <div class="company-info">
-                <span class="company-name">Infor PSSC, Inc.</span> • 
-                <span class="location">Taguig, Manila, PH</span>
+                <span class="company-name">Infor PSSC, Inc.</span> &mdash;
+                Taguig, Manila, Philippines
             </div>
             <ul class="highlights">
-                <li>Designed and maintained data warehousing and ETL processes using SSIS, enhancing data accessibility and reliability for business intelligence purposes.</li>
-                <li>Developed and optimized applications with C#, VB.NET, and T-SQL, meeting critical data processing requirements and ensuring consistent client satisfaction.</li>
-                <li>Built automation tools to streamline workflows, leveraging PowerShell and the .NET Framework to improve process efficiency.</li>
-                <li>Actively contributed to Agile team initiatives, supporting continuous improvement in software development practices and outcomes.</li>
+                <li>Worked on a Data Warehouse Designer tool built in C# and VB.NET &mdash; an internal application that lets users visually design and generate SSIS packages, simplifying the data warehousing process without hand-coding ETL pipelines.</li>
+                <li>Heavy T-SQL work across both cloud and on-premises SQL Server environments &mdash; wrote stored procedures, reporting queries, and data transformation logic to support the generated SSIS packages and downstream BI reports.</li>
+                <li>Automated several recurring ops tasks with PowerShell scripts, cutting the team's weekly manual maintenance work noticeably.</li>
+                <li>Part of an Agile squad that pushed for better sprint habits &mdash; picked up technical debt alongside feature work rather than deferring it.</li>
             </ul>
         </div>
 
         <div class="job">
             <div class="job-header">
                 <div class="job-title">Associate Software Engineer</div>
-                <div class="job-date">October 2017 - April 2019</div>
+                <div class="job-date">October 2017 &ndash; April 2019</div>
             </div>
             <div class="company-info">
-                <span class="company-name">Accenture Inc.</span> • 
-                <span class="location">Taguig, Manila, PH</span>
+                <span class="company-name">Accenture Inc.</span> &mdash;
+                Taguig, Manila, Philippines
             </div>
             <ul class="highlights">
-                <li>Engineered a data-driven analytics website, utilizing ReactJS, Web API, and T-SQL, providing clients with actionable insights through intuitive, data-rich dashboards.</li>
-                <li>Executed ETL processes and report generation with SSIS and SSRS, integrating analytics capabilities within cloud environments.</li>
-                <li>Developed and implemented automation scripts for cloud server management (AWS, Azure), optimizing infrastructure monitoring and maintenance.</li>
-                <li>Engaged with an Agile/Scrum team, collaborating on global projects to ensure timely, high-quality deliverables for multinational clients.</li>
+                <li>Built an analytics dashboard in ReactJS and Web API that replaced a manual client reporting process &mdash; gave stakeholders a live view of their data instead of waiting on weekly exports.</li>
+                <li>Designed and built ETL pipelines and SSRS reports as part of a data integration project spanning both Azure and AWS environments.</li>
+                <li>Wrote cloud infrastructure automation scripts for AWS and Azure in support of the environment delivery team &mdash; reduced the number of manual environment checks and provisioning steps the team ran each week.</li>
+                <li>Monitored a fleet of 10,000+ servers to verify sites were up, meeting performance benchmarks, and compliant with infrastructure standards.</li>
+                <li>Worked in a global Scrum team across multiple timezones &mdash; got comfortable with async-first collaboration and documentation quickly.</li>
             </ul>
         </div>
     </section>
 
     <section id="skills">
         <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Programming Languages & Frameworks</h3>
-                <ul>
-                    <li>C# (.NET Framework, .NET Core, ASP.NET)</li>
-                    <li>JavaScript/TypeScript (Next.js, React, Node.js, jQuery)</li>
-                    <li>SQL (T-SQL, Query Optimization, Stored Procedures)</li>
-                    <li>HTML/CSS</li>
-                </ul>
-            </div>
 
-            <div class="skill-category">
-                <h3>API & Architecture</h3>
-                <ul>
-                    <li>RESTful API Design & Development</li>
-                    <li>Microservices Architecture</li>
-                    <li>WebSockets (SignalR)</li>
-                    <li>GraphQL</li>
-                    <li>API Documentation (Swagger/OpenAPI)</li>
-                </ul>
+        <div class="skill-row">
+            <span class="skill-label">Languages &amp; Frameworks</span>
+            <div class="skill-tags">
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">.NET / ASP.NET Core</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">VB.NET</span>
+                <span class="skill-tag">Entity Framework / EF Core</span>
+                <span class="skill-tag">T-SQL</span>
+                <span class="skill-tag">HTML / CSS</span>
             </div>
+        </div>
 
-            <div class="skill-category">
-                <h3>Integrations & Payment Systems</h3>
-                <ul>
-                    <li>Payment Gateways (Stripe, Authorize.NET, etc.)</li>
-                    <li>Billing & Subscription Systems</li>
-                    <li>Tax Compliance APIs</li>
-                    <li>Third-Party API Integration</li>
-                    <li>Webhooks</li>
-                    <li>OAuth/JWT Authentication</li>
-                </ul>
+        <div class="skill-row">
+            <span class="skill-label">API &amp; Architecture</span>
+            <div class="skill-tags">
+                <span class="skill-tag">RESTful API</span>
+                <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">Event-Driven Architecture</span>
+                <span class="skill-tag">GraphQL</span>
+                <span class="skill-tag">SignalR / WebSockets</span>
+                <span class="skill-tag">RabbitMQ</span>
+                <span class="skill-tag">Apache Kafka</span>
+                <span class="skill-tag">Swagger / OpenAPI</span>
             </div>
+        </div>
 
-            <div class="skill-category">
-                <h3>Cloud Platforms & DevOps</h3>
-                <ul>
-                    <li>Azure (App Services, Service Bus, SQL Database, Blob Storage, Functions)</li>
-                    <li>AWS (EC2, S3, Lambda, RDS)</li>
-                    <li>Cloud Migration & Modernization</li>
-                    <li>Railway</li>
-                    <li>Netlify</li>
-                </ul>
+        <div class="skill-row">
+            <span class="skill-label">Integrations &amp; Payments</span>
+            <div class="skill-tags">
+                <span class="skill-tag">Stripe</span>
+                <span class="skill-tag">Authorize.NET</span>
+                <span class="skill-tag">Billing &amp; Subscriptions</span>
+                <span class="skill-tag">Tax Compliance APIs</span>
+                <span class="skill-tag">Webhooks</span>
+                <span class="skill-tag">OAuth / JWT</span>
             </div>
+        </div>
 
-            <div class="skill-category">
-                <h3>Software Development Practices</h3>
-                <ul>
-                    <li>Agile/SCRUM Methodologies</li>
-                    <li>CI/CD Pipelines</li>
-                    <li>Git (GitHub, GitLab, Azure DevOps)</li>
-                    <li>Unit Testing (xUnit, NUnit)</li>
-                    <li>TDD/BDD Practices</li>
-                    <li>Code Review</li>
-                </ul>
+        <div class="skill-row">
+            <span class="skill-label">Cloud &amp; DevOps</span>
+            <div class="skill-tags">
+                <span class="skill-tag">Azure App Services</span>
+                <span class="skill-tag">Azure Functions</span>
+                <span class="skill-tag">Azure Service Bus</span>
+                <span class="skill-tag">AWS EC2 / S3 / Lambda / RDS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Kubernetes / AKS</span>
+                <span class="skill-tag">CI/CD Pipelines</span>
+                <span class="skill-tag">Cloud Migration</span>
             </div>
+        </div>
 
-            <div class="skill-category">
-                <h3>Database & Data Engineering</h3>
-                <ul>
-                    <li>SQL Server, PostgreSQL, MySQL</li>
-                    <li>Supabase, PlanetScale</li>
-                    <li>NoSQL (MongoDB, Redis)</li>
-                    <li>Database Design & Performance Tuning</li>
-                    <li>ETL/ELT Processes & Data Pipelines</li>
-                    <li>Data Migration & Transformation</li>
-                </ul>
+        <div class="skill-row">
+            <span class="skill-label">Database &amp; Data Eng.</span>
+            <div class="skill-tags">
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">CosmosDB</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Redis</span>
+                <span class="skill-tag">ETL / ELT</span>
+                <span class="skill-tag">SSIS</span>
+                <span class="skill-tag">SSRS</span>
+                <span class="skill-tag">Data Warehousing</span>
+                <span class="skill-tag">Performance Tuning</span>
             </div>
+        </div>
 
-            <div class="skill-category">
-                <h3>Automation & Tooling</h3>
-                <ul>
-                    <li>n8n (Workflow Design, Custom Node Development)</li>
-                    <li>AI Agents & Automation</li>
-                    <li>PowerShell Scripting</li>
-                    <li>Process Automation</li>
-                </ul>
+        <div class="skill-row">
+            <span class="skill-label">Observability</span>
+            <div class="skill-tags">
+                <span class="skill-tag">Azure Application Insights</span>
+                <span class="skill-tag">Azure Monitor</span>
+                <span class="skill-tag">Sentry</span>
+                <span class="skill-tag">Datadog</span>
+            </div>
+        </div>
+
+        <div class="skill-row">
+            <span class="skill-label">AI &amp; LLM Integration</span>
+            <div class="skill-tags">
+                <span class="skill-tag">Semantic Kernel</span>
+                <span class="skill-tag">OpenAI API</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">AI Agents</span>
+                <span class="skill-tag">n8n</span>
+            </div>
+        </div>
+
+        <div class="skill-row">
+            <span class="skill-label">Practices &amp; Tooling</span>
+            <div class="skill-tags">
+                <span class="skill-tag">Agile / Scrum</span>
+                <span class="skill-tag">Git / GitHub / GitLab / Azure DevOps</span>
+                <span class="skill-tag">xUnit / NUnit / Jest</span>
+                <span class="skill-tag">TDD / BDD</span>
+                <span class="skill-tag">Technical Mentoring</span>
+                <span class="skill-tag">PowerShell</span>
             </div>
         </div>
     </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="edu-entry">
+            <div class="edu-left">
+                <div class="edu-degree">Bachelor of Science in Information Systems</div>
+                <div class="edu-school">De La Salle University &ndash; Lipa</div>
+            </div>
+            <div class="edu-year">2016</div>
+        </div>
+    </section>
+
 </body>
 </html>
