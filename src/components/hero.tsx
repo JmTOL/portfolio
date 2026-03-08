@@ -72,7 +72,7 @@ export function Hero() {
               <h3 className="text-lg font-semibold">Background</h3>
             </div>
             <p className="text-muted-foreground">
-              I'm a passionate developer with over 7 years of experience building web applications.
+              Fullstack Software Developer with 8+ years building web applications, APIs, and cloud systems in C#/.NET and JavaScript.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export function Hero() {
               <h3 className="text-lg font-semibold">Experience</h3>
             </div>
             <p className="text-muted-foreground">
-              I've worked with companies ranging from startups to enterprises, helping them build scalable applications.
+              I've worked at Anytime Mailbox, Infor, and Accenture — building SaaS platforms, data warehousing tools, and cloud infrastructure across distributed Agile teams.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export function Hero() {
               <h3 className="text-lg font-semibold">Expertise</h3>
             </div>
             <p className="text-muted-foreground">
-              My core skills include C#, SQL, React, Next.js, and modern web frameworks.
+              My core stack is C#/.NET, TypeScript, React, and Next.js — with deep experience in payment systems, cloud migration, data engineering, and AI integrations.
             </p>
           </div>
         </div>
